@@ -4,9 +4,8 @@ import JobList from "./JobList";
 
 function JobBoard() {
   const [jobs, setJobs] = useState([]);
-  useEffect(async () => {
-    const jobs = await getJobs();
-    setJobs(jobs);
+  useEffect(() => {
+    getJobs().then(setJobs);
   }, []);
 
   return (
