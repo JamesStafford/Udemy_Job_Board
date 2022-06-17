@@ -9,7 +9,7 @@ function CompanyDetail() {
 
   useEffect(() => {
     getCompany(companyId).then(setCompany);
-  }, []);
+  }, [companyId]);
 
   if (!company) {
     return <div>Loading...</div>;
