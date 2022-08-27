@@ -2,8 +2,8 @@ import { useState } from "react";
 import { login } from "../auth";
 
 function LoginForm({ onLogin }) {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("alice@facegle.io");
+  const [password, setPassword] = useState("alice123");
   const [error, setError] = useState(false);
 
   const handleSubmit = async (event) => {
